@@ -1,4 +1,5 @@
-var tl = gsap.timeline();
+function loadingAnimation (){
+   var tl = gsap.timeline();
 tl.from(".line h1", {
   y: 150,
   stagger: 0.25, //GSAP's stagger ek powerful feature hai jo aapko ek sequence of elements ko animate karne mein madad karta hai, lekin har element ko thoda sa time difference (delay) ke saath animate karta hai. Iska use tab hota hai jab aapko multiple elements ko ek sath animate karna ho, par unka animation ek hi waqt na ho, balki ek delay ke sath ho, jisse ek beautiful, flowing effect create ho.
@@ -43,4 +44,9 @@ tl.from("page1",{
 tl.to("#loader",{
    display:"none"
 })
-//  27:51
+
+
+}
+loadingAnimation();
+
+//  55:42
