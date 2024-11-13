@@ -28,7 +28,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 1.2vw;
+  gap: 1vw;
 }
 #line1-part1{
     display: flex;
@@ -38,21 +38,70 @@ body {
 }
 #line1-part1 h5, #line1-part1 h6{
     font-size: 3vw;
+    font-weight: 100;
     font-family: 'silk serif';
+}
+#line1-part1 h5{
+  width: 5vw;
+  text-align: right;
 }
 .line h1 {
   font-size: 6.5vw;
   text-transform: uppercase;
   font-weight: 900;
 }
+/* now word */
+.line h2{
+    font-size: 5vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    opacity: 0;
+    animation-duration:1.5s;
+    animation-iteration-count: infinite;
+}
+
+/* now word ka animation */
+@keyframes anime{
+0%{
+  font-family:"plain light" ;
+  -webkit-text-stroke: 1px #fff; /* yeh text m border leaata h*/
+  color: #fff;
+  font-weight: 500 ;
+  opacity: 1;
+}
+48%{
+  font-family:"plain light" ;
+  -webkit-text-stroke: 1px #fff; /* yeh text m border leaata h*/
+  color: #fff;
+  font-weight: 500 ;
+  opacity: 0;
+}
+50%{
+  font-family: "silk serif";
+  -webkit-text-stroke: 1px #fff;
+  font-weight: 500 ;
+  color: transparent ;
+  opacity: 1;
+}
+100%{
+  font-family: "silk serif";
+  -webkit-text-stroke: 1px #fff;
+  font-weight: 500 ;
+  color: transparent ;
+  opacity: 0;
+}
+
+
+}
+
 
 #main {
   position: relative;
-  background-color: #111;
+  background-color: #030303;
 }
 
 #page1 {
   height: 100vh;
   width: 100%;
-  background-color: #441414;
+  background-color: #030303;
 }
