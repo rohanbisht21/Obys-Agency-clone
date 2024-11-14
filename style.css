@@ -105,3 +105,21 @@ body {
   width: 100%;
   background-color: #030303;
 }
+
+#page1 #nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.3vw 5.5vw;
+}
+
+#nav-part2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3vw;
+}
+
+#nav-part2 h4{
+  font-size: 0.8vw;
+}
