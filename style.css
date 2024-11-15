@@ -11,6 +11,16 @@ body {
   height: 100%;
   width: 100%;
 }
+#crsr{
+  height: 2.3vw;
+  width: 2.3vw;
+  border-radius: 50%;
+  /* background-color: white; */
+  border: 1px solid white;
+  position: fixed;
+  z-index: 9999;
+
+}
 
 #loader {
   height: 100%;
@@ -21,7 +31,7 @@ body {
   padding: 25vh 10vw;
 }
 .line {
-  /* background-color: red; */
+  background-color: red;
   height: fit-content;
 
   overflow: hidden;
@@ -122,4 +132,20 @@ body {
 
 #nav-part2 h4{
   font-size: 0.8vw;
+  font-weight: 500;
+}
+
+.hero{
+  /* background-color: red; */
+  width: 75%;
+  margin-left: 25%;
+}
+.hero:nth-childe(2) {
+  margin-top: 18vh;
+}
+.hero h1{
+  font-size: 7.1vw;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 7vw;
 }
