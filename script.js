@@ -48,8 +48,8 @@ tl.to("#loader",{
 tl.from("#nav",{
 opacity:0,
  })
- tl.from("#hero1 h1, #hero2 h1, #hero3 h2, #hero4 h1",{
-  y:120,
+ tl.from("#hero1 h1,#hero2 h1,#hero3 h2,#hero4 h1",{
+  y:100,
   stagger:0.2
  })
 
@@ -67,4 +67,4 @@ function cursorAnimation(){
 
 loadingAnimation();
 cursorAnimation();
-//  1:15
+//  1:34
