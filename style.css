@@ -16,10 +16,11 @@ body {
   width: 2.3vw;
   border-radius: 50%;
   /* background-color: white; */
-  border: 1px solid white;
+  border: 2px solid white;
   position: fixed;
   z-index: 9999;
-
+  mix-blend-mode: difference; /*isse kya hoga ki jo humara coursor h woh color change krega acc to its bg*/
+transform: translate(-50%,-50%);
 }
 
 #loader {
@@ -137,8 +138,8 @@ body {
 
 .hero{
   /* background-color: red; */
-  width: 75%;
-  margin-left: 25%;
+  width: 72%;
+  margin-left: 27%;
 }
 .hero:nth-childe(2) {
   margin-top: 18vh;

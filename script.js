@@ -47,6 +47,17 @@ tl.to("#loader",{
 
 
 }
-loadingAnimation();
+function cursorAnimation(){
+  document.addEventListener("mousemove",function(dets){
+    gsap.to('#crsr',{
+      left:dets.x,
+      top: dets.y,
+     
+    })
+  })
+  Shery.makeMagnet("#nav-part2 h4",{});
+}
 
-//  59:32
+loadingAnimation();
+cursorAnimation();
+//  1:15
