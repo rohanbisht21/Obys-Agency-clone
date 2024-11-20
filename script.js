@@ -67,4 +67,4 @@ function cursorAnimation(){
 
 loadingAnimation();
 cursorAnimation();
-//  1:34
+//  1:59
