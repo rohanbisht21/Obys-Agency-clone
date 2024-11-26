@@ -11,7 +11,7 @@ body {
   height: 100%;
   width: 100%;
 }
-#crsr{
+#crsr {
   height: 2vw;
   width: 2vw;
   border-radius: 50%;
@@ -20,7 +20,7 @@ body {
   position: fixed;
   z-index: 9999;
   mix-blend-mode: difference; /*isse kya hoga ki jo humara coursor h woh color change krega acc to its bg*/
-transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
 #loader {
@@ -41,18 +41,19 @@ transform: translate(-50%,-50%);
   justify-content: flex-start;
   gap: 1vw;
 }
-#line1-part1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2vw;
+#line1-part1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
 }
-#line1-part1 h5, #line1-part1 h6{
-    font-size: 3vw;
-    font-weight: 100;
-    font-family: 'silk serif';
+#line1-part1 h5,
+#line1-part1 h6 {
+  font-size: 3vw;
+  font-weight: 100;
+  font-family: "silk serif";
 }
-#line1-part1 h5{
+#line1-part1 h5 {
   width: 5vw;
   text-align: right;
 }
@@ -62,49 +63,46 @@ transform: translate(-50%,-50%);
   font-weight: 900;
 }
 /* now word */
-.line h2{
-    font-size: 5vw;
-    text-transform: uppercase;
-    font-weight: 900;
-    opacity: 0;
-    animation-duration:1.5s;
-    animation-iteration-count: infinite;
+.line h2 {
+  font-size: 5vw;
+  text-transform: uppercase;
+  font-weight: 900;
+  opacity: 0;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
 }
 
 /* now word ka animation */
-@keyframes anime{
-0%{
-  font-family:"plain light" ;
-  -webkit-text-stroke: 1px #fff; /* yeh text m border leaata h*/
-  color: #fff;
-  font-weight: 500 ;
-  opacity: 1;
+@keyframes anime {
+  0% {
+    font-family: "plain light";
+    -webkit-text-stroke: 1px #fff; /* yeh text m border leaata h*/
+    color: #fff;
+    font-weight: 500;
+    opacity: 1;
+  }
+  48% {
+    font-family: "plain light";
+    -webkit-text-stroke: 1px #fff; /* yeh text m border leaata h*/
+    color: #fff;
+    font-weight: 500;
+    opacity: 0;
+  }
+  50% {
+    font-family: "silk serif";
+    -webkit-text-stroke: 1px #fff;
+    font-weight: 500;
+    color: transparent;
+    opacity: 1;
+  }
+  100% {
+    font-family: "silk serif";
+    -webkit-text-stroke: 1px #fff;
+    font-weight: 500;
+    color: transparent;
+    opacity: 0;
+  }
 }
-48%{
-  font-family:"plain light" ;
-  -webkit-text-stroke: 1px #fff; /* yeh text m border leaata h*/
-  color: #fff;
-  font-weight: 500 ;
-  opacity: 0;
-}
-50%{
-  font-family: "silk serif";
-  -webkit-text-stroke: 1px #fff;
-  font-weight: 500 ;
-  color: transparent ;
-  opacity: 1;
-}
-100%{
-  font-family: "silk serif";
-  -webkit-text-stroke: 1px #fff;
-  font-weight: 500 ;
-  color: transparent ;
-  opacity: 0;
-}
-
-
-}
-
 
 #main {
   position: relative;
@@ -117,26 +115,26 @@ transform: translate(-50%,-50%);
   background-color: #151515;
 }
 
-#page1 #nav{
+#page1 #nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 2.3vw 5.5vw;
 }
 
-#nav-part2{
+#nav-part2 {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 3vw;
 }
 
-#nav-part2 h4{
+#nav-part2 h4 {
   font-size: 0.8vw;
   font-weight: 500;
 }
 
-.hero{
+.hero {
   /* background-color: red; */
   width: 72%;
   margin-left: 27%;
@@ -150,143 +148,143 @@ transform: translate(-50%,-50%);
 .hero:nth-childe(2) {
   margin-top: 18vh;
 }
-.hero h1{
+.hero h1 {
   font-size: 7.2vw;
   font-weight: 600;
   text-transform: uppercase;
   line-height: 7.2vw;
 }
- 
 
-.hero h2{
+.hero h2 {
   font-size: 7.2vw;
   font-weight: 600;
   text-transform: uppercase;
   line-height: 7.2vw;
   border-bottom: 0.5vw solid #fff;
- /* padding-bottom:0.8vw ;
+  /* padding-bottom:0.8vw ;
  transition: all ease 3s; */
 }
-.hero h2:hover{
-  -webkit-text-stroke: 2px  #fff;
+.hero h2:hover {
+  -webkit-text-stroke: 2px #fff;
   color: transparent;
   font-weight: 500;
   border-bottom: 0.5vw solid #ffffff00;
 }
-#page2{
+#page2 {
   height: 100vh;
   width: 100%;
   padding-top: 17vh;
   position: relative;
 }
 
-#video-container{
+#video-container {
   height: 66vh;
   width: 71vw;
   position: relative;
   left: 28%;
   background-image: url(https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg);
 }
-#video-container img{
-  position:absolute;
-  height:100%;
-width: 100%;
-object-fit: cover;
-top:0;
-}
-
-#video-container video{
+#video-container img {
+  position: absolute;
   height: 100%;
   width: 100%;
-object-fit: cover;
+  object-fit: cover;
+  top: 0;
 }
 
-#video-cursor{
-  background-color: #FFA63D;
+#video-container video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#video-cursor {
+  background-color: #ffa63d;
   height: 8.5vw;
   width: 8.5vw;
   border-radius: 50%;
   position: absolute;
- top: -10%;
+  top: -10%;
   left: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 999;
-  
 }
-#video-cursor i{
+#video-cursor i {
   font-size: 2vw;
 }
 
-#page3{
+#page3 {
   min-height: 100vh;
   width: 100%;
   background-color: rgb(67, 67, 67);
 
   position: relative;
 }
-#page4{
+#page4 {
   min-height: 100vh;
   width: 100%;
- padding-top: 5vh;
-  /* position: relative; */
+  padding: 7vh 0;
+  position: relative;
 }
 
-#page4-content{
+#page4-content {
   width: 72vw;
+  position: relative;
   margin-left: 28%;
 }
 
-#page4-content h1{
+#page4-content h1 {
   font-size: 7vw;
   text-transform: uppercase;
 }
 
-#page4-content .underline{
-height: 2px;
-width: 100%;
-background-color: #fff;
-margin: 5vw 0;
+#page4-content .underline {
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  margin: 5vw 0;
 }
 
-#page4-content>p{
+#page4-content > p {
   font-size: 2.05vw;
   width: 90%;
   margin-bottom: 3vw;
 }
 
-#page4-flex{
+#page4-flex {
   display: flex;
-  
 }
 
-#page4-flex>img{
+#page4-flex > img {
   width: 48%;
-  
 }
 
-
-#page4-flex p{
+#page4-flex p {
   font-size: 0.9vw;
   width: 19%;
   margin-left: 1vw;
-  
 }
 
-#page4-blue-div{
-  background-color: #3F7DF4;
+#page4-blue-div {
+  background-color: #3f7df4;
   width: 30vw;
   padding: 4vw 2vw;
   position: relative;
   margin-top: -33vh;
-  margin-left:26vw ;
+  margin-left: 26vw;
 }
 
-
-#page4-blue-div p{
+#page4-blue-div p {
   width: 94%;
   font-size: 1.2vw;
-    font-weight: 600;
-    font-style: italic;
+  font-weight: 600;
+  font-style: italic;
+}
+
+#page5 {
+  min-height: 100vh;
+  width: 100%;
+  padding: 5vw 0;
 }
